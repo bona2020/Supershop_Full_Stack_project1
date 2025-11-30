@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from mangum import Mangum
-from backend.employees import router as employee_router
-from backend.products import router as product_router
-from backend.sales import router as sales_router
+from backend.Src.employees import router as employee_router
+from backend.Src.products import router as product_router
+from backend.Src.sales import router as sales_router
 
 app = FastAPI()
 #=========================================================
