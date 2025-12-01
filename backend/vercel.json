@@ -1,16 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "backend/main.py": {
-      "runtime": "python3.9",
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "backend/main.py" }
-  ],
   "builds": [
-    { "src": "backend/main.py", "use": "@vercel/python" }
+    {
+      "src": "backend/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/main.py"
+    }
   ]
 }
