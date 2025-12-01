@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from mangum import Mangum
+# from mangum import Mangum
 from backend.Src.employees import router as employee_router
 from backend.Src.products import router as product_router
 from backend.Src.sales import router as sales_router
@@ -16,5 +16,5 @@ app.include_router(employee_router)
 app.include_router(product_router)
 app.include_router(sales_router)
 
-handler = Mangum(app)
+# handler = Mangum(app)
 
