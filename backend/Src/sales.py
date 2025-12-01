@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from utils import get_conn
+from backend.utils import get_conn
 
 router = APIRouter(tags= ['Sales'])
 
